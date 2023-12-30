@@ -70,7 +70,7 @@ const Navbar = () => {
                                     onBlur={handleOnBlur}
                                     className='relative'
                                 >
-                                    <button className='w-12 h-12 mt-1 border rounded-full'>
+                                    <button className='w-12 h-12 mt-1'>
                                         <img src={profile_img} alt="" className='w-full h-full object-cover rounded-full' />
                                     </button>
 
