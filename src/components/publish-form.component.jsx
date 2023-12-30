@@ -63,7 +63,7 @@ const PublishForm = () => {
             toast.error("Write blog title before publishing")
         }
 
-        if (!des.length || des.length < characterLimit) {
+        if (!des.length) {
             toast.error("Write a description about your blog")
         }
 
