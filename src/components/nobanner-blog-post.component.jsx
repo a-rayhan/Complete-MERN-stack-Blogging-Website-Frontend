@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { getDay } from "../common/date";
 
-const MinimalBlogPost = ({ blog, index }) => {
+const MinimalblogPost = ({ blog, index }) => {
 
     let { publishedAt, title, author: { personal_info: { fullname, username, profile_img } }, blog_id: id } = blog;
 
@@ -35,4 +35,4 @@ const MinimalBlogPost = ({ blog, index }) => {
     );
 };
 
-export default MinimalBlogPost;
+export default MinimalblogPost;

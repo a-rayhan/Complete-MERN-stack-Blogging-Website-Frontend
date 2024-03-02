@@ -9,11 +9,11 @@ const BlogPostCard = ({ content, author }) => {
 
     return (
         <Link to={`/blog/${id}`}
-        className="flex gap-8 items-center border-b border-grey pb-5 mb-4"
+            className="flex gap-8 items-center border-b border-grey pb-5 mb-4"
         >
             <div className="w-full">
                 <div className="flex gap-2 items-center mb-7">
-                    <img
+                    {/* <img
                         src={profile_img}
                         alt=""
                         className="w-6 h-6 rounded-full"
@@ -25,7 +25,8 @@ const BlogPostCard = ({ content, author }) => {
 
                     <p className="min-w-fit">
                         {getDay(publishedAt)}
-                    </p>
+                    </p> */}
+
                 </div>
 
                 <h1 className="blog-title">
@@ -41,14 +42,21 @@ const BlogPostCard = ({ content, author }) => {
                         tags.length ? <span className="btn-light py-1 px-4">{tags[0]}</span> : ""
                     }
 
-                    <span className="ml-3 flex items-center gap-2 text-dark-grey">
-                        <i className="fi fi-rr-heart text-xl"></i>
-                        {total_likes}
+                   <span className="ml-3 flex items-center gap-2 text-dark-grey">
+                        <i className="fi fi-rr-book text-xl"></i>
+                        {/* {total_likes} */} Books
                     </span>
+
+                    <p className="min-w-fit">
+                        {/* {getDay(publishedAt)} */}
+                        <span className="ml-3 flex items-center gap-2 text-dark-grey">
+                            Serial No: 0503-0120
+                        </span>
+                    </p>
                 </div>
             </div>
 
-            <div className="h-28 aspect-square bg-grey"></div>
+            <div className="h-40 aspect-square bg-grey"></div>
         </Link>
     );
 };
